@@ -1,0 +1,269 @@
+/* Fondo oscuro limpio */
+body {
+    background: #181c2b;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eaf6fb;
+}
+
+/* Títulos con borde neon */
+h1 {
+    color: #eaf6fb;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin: 30px 0 10px 0;
+    text-align: center;
+    border: 2px solid #00ffe7;
+    border-radius: 10px;
+    padding: 6px 20px;
+    background: transparent;
+    box-shadow: 0 0 12px #00ffe7;
+}
+
+/* Enlaces normales, solo borde neon en nav */
+a {
+    text-decoration: none;
+    color: #eaf6fb;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00ffe7;
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #eaf6fb;
+}
+
+/* Barra de navegación con borde neon */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 48px 28px 14px 28px; /* Aumenta el espacio arriba */
+    background: #232a3d;
+    border-bottom: 2px solid #00ffe7;
+    box-shadow: 0 0 12px #00ffe7;
+    position: relative;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 6px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #eaf6fb;
+    font-weight: bold;
+    padding: 7px 14px;
+    border-radius: 7px;
+    background: transparent;
+    border: 2px solid #00ffe7;
+    box-shadow: 0 0 8px #00ffe7;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background: transparent;
+    color: #00ffe7;
+    box-shadow: 0 0 16px #00ffe7;
+    border-color: #00ffe7;
+}
+
+/* Contenedor para h1 en línea */
+.h1-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+/* Logo con borde neon */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.logo-animated {
+    width: 150px;
+    height: 150px;
+    animation: floatLogo 2.5s ease-in-out infinite;
+    border-radius: 50%;
+    background: #232a3d;
+    object-fit: contain;
+    border: 3px solid #00ffe7;
+    box-shadow: 0 0 18px #00ffe7;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.logo-animated:hover {
+    box-shadow: 0 0 32px #00ffe7;
+    border-color: #00ffe7;
+}
+
+@keyframes floatLogo {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-12px) scale(1.05); }
+}
+
+.button-group {
+    display: flex;
+    gap: 22px;
+    margin-top: 24px;
+}
+
+/* Botones con borde neon */
+.dynamic-btn {
+    padding: 11px 26px;
+    background: transparent;
+    color: #eaf6fb;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #00ffe7;
+    border-radius: 9px;
+    box-shadow: 0 0 14px #00ffe7;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.dynamic-btn:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 0 24px #00ffe7;
+    border-color: #00ffe7;
+    color: #00ffe7;
+}
+
+/* Slogan centrado y limpio */
+.slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 1.15rem;
+    color: #eaf6fb;
+    margin-bottom: 18px;
+    margin-top: 0;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* ...existing code... */
+.player-counter {
+    position: fixed;
+    top: 20px;
+    right: 32px;
+    background: rgba(24, 28, 43, 0.85);
+    color: #00ffe7;
+    border: 3px solid #00ffe7;
+    border-radius: 14px;
+    padding: 12px 28px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 0 18px #00ffe7;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.player-counter span {
+    color: #eaf6fb;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-shadow: 0 0 8px #00ffe7;
+}
+.news-section {
+    margin: 56px auto 0 auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.news-title {
+    text-align: center;
+    color: #eaf6fb;
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+}
+
+.news-grid {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-card {
+    background: #232a3d;
+    border: 2px solid #00ffe7;
+    box-shadow: 0 0 16px #00ffe7;
+    border-radius: 14px;
+    padding: 22px 26px;
+    width: 260px;
+    color: #eaf6fb;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 18px;
+}
+
+.news-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #00ffe7;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+
+.news-card p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.news-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 0 32px #00ffe7;
+}
+
+.special-card {
+    border: 2.5px solid #ff00ea;
+    box-shadow: 0 0 24px #ff00ea;
+    background: #232a3d;
+}
+
+.special-card h3 {
+    color: #ff00ea;
+    font-size: 1.08rem;
+    margin-bottom: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.special-card ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.98rem;
+}
+
+.special-card .subitem {
+    display: block;
+    margin-left: 12px;
+    color: #00ffe7;
+    font-size: 0.97rem;
+}
+
+
