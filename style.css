@@ -1,0 +1,178 @@
+/* Fondo oscuro */
+body {
+    background: #121212;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+}
+
+/* Header estilo oscuro */
+header {
+    background: #1f1f1f;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    padding-bottom: 0;
+}
+
+/* Barra de navegación */
+nav {
+    background: transparent;
+    padding: 0;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 18px 0;
+}
+
+.nav-links li a {
+    color: #ddd;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: background 0.25s, color 0.25s;
+}
+
+.nav-links li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Contador de jugadores estilo badge oscuro */
+.player-counter {
+    position: fixed;
+    top: 16px;
+    right: 28px;
+    background: #1f1f1f;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+/* Logo estilo oscuro */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo-animated {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #1f1f1f;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+    object-fit: contain;
+    margin-bottom: 16px;
+    border: 2px solid #333;
+    transition: box-shadow 0.3s;
+}
+
+.logo-animated:hover {
+    box-shadow: 0 8px 32px #444;
+}
+
+/* Slogan estilo dark */
+.slogan {
+    font-size: 1.1rem;
+    color: #fff;
+    background: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    padding: 10px 22px;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* Botones sociales estilo oscuro */
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.dynamic-btn {
+    background: #2d2d2d;
+    color: #ddd;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.25s, color 0.25s;
+}
+
+.dynamic-btn:hover {
+    background: #3d3d3d;
+    color: #fff;
+}
+
+/* Noticias en cuadros estilo tarjetas */
+.news-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.news-title {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.news-card {
+    background: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    width: 240px;
+    padding: 16px 16px 12px 16px;
+    color: #ccc;
+    margin-bottom: 14px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+.news-card h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.news-card ul, 
+.news-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0;
+    padding-left: 12px;
+}
